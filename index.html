@@ -13,6 +13,7 @@
     <title>Meteor App</title>
   </head>
   <body>
+    <img src="" alt="">
     <div class="weather-app">
       <header>
         <form class="search-form">
@@ -21,15 +22,23 @@
         </form>
       </header>
       <main>
+        <div class="weather-app-data">
         <div>
-          <h1>Abuja</h1>
-          <p>
+          <h1 class="weather-app-city">Abuja</h1>
+          <p class="weather-app-details">
             Tuesday 14:49, scattered clouds
             <br />
-            Humidity: 66%, Wind: 3.13km/h
+            
+            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+          </div><div>
           </p>
         </div>
-        <div>⛅️ 33°C</div>
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-icon">⛅️</div>
+        <div class="weather-app-temperature">33</div> 
+      <div class="weather-app-unit">°C</div>
+      </div>
+      </div>
       </main>
 
       <footer>
