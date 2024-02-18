@@ -3,43 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Meteor App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>My weather application</title>
   </head>
   <body>
-    <img src="" alt="">
     <div class="weather-app">
       <header>
-        <form class="search-form" id="search-form">
-          <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input"/>
-          <input type="submit" value="search" class="search-form-button" />
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <div class="weather-app-data">
-        <div>
-          <h1 class="weather-app-city" id="weather-app-city">Abuja</h1>
-          <p class="weather-app-details">
-            Tuesday 14:49, scattered clouds
-            <br />
-            
-            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
-          </div><div>
-          </p>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-details">
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
         </div>
-        <div class="weather-app-temperature-container">
-          <div class="weather-app-icon">⛅️</div>
-        <div class="weather-app-temperature">33</div> 
-      <div class="weather-app-unit">°C</div>
-      </div>
-      </div>
       </main>
 
       <footer>
@@ -51,7 +54,7 @@
           >open-sourced on github</a
         >
         and
-        <a href="" target="_blank">hosted on Netlify</a>
+        <a href="https://pringles-weather.netlify.app" target="_blank">hosted on Netlify</a>
       </footer>
     </div>
     <script src="app.js"></script>
