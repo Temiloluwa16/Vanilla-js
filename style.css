@@ -16,6 +16,10 @@ header {
     border-bottom: 1px solid #f9f7fe;
     padding: 0 0 30px 0;
 }
+a {
+    text-decoration: none;
+    color: #D65298;
+}
 .search-form-input {
     background-color: #f9f7fe; 
     border: none;
@@ -26,7 +30,7 @@ header {
 }
 
 .search-form-button {
-   background: pink;
+   background: #B72863;
    padding: 15px 30px;
    border: none;
    border-radius: 6px;
