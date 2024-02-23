@@ -2,14 +2,24 @@ function displayTemperature(response) {
     let temperatureElement = document.querySelector("#current-temperature");
     let temperature = Math.round(response.data.temperature.current);
     let cityElement = document.querySelector("#current-city");
+let descriptionElement = document.querySelector("#description");
+    let temperatureHumidity = document.querySelector("#humidity");
+    let temperatureWind = document.querySelector("#wind-speed");
+
     cityElement.innerHTML = response.data.city;
+    
     temperatureElement.innerHTML = temperature;
+    descriptionElement.innerHTML = response.data.condition.description;
+    temperatureHumidity.innerHTML = `${response.data.temperature.humidity}%`;
+    temperatureWind.innerHTML = `${response.data.wind.speed}km/h`;
+    console.log(response.data);
   }
   
   function search(event) {
     event.preventDefault();
     let searchInputElement = document.querySelector("#search-input");
     let city = searchInputElement.value;
+    
   
     let apiKey = "b2a5adcct04b33178913oc335f405433";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -47,7 +57,8 @@ function displayTemperature(response) {
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", search);
   
-  let currentDateELement = document.querySelector("#current-date");
+  
+  let currentDateELement = document.querySelector("#time");
   let currentDate = new Date();
   
   currentDateELement.innerHTML = formatDate(currentDate);
