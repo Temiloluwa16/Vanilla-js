@@ -1,10 +1,10 @@
 body {
-    background: #f9f7fe;
+    background: #F6F3FB;
     font-family: "Roboto", sans-serif;
   }
   
   a {
-       color: #f65282;
+       color: #F65282;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
       }
@@ -12,7 +12,10 @@ body {
       
       
       .weather-app {
-        background: white;
+        background-image: url(img/pexels-pixabay-531767.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         max-width: 600px;
         margin: 60px auto;
         padding: 30px;
