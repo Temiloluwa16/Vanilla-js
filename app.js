@@ -5,26 +5,30 @@ function displayTemperature(response) {
 let descriptionElement = document.querySelector("#description");
     let temperatureHumidity = document.querySelector("#humidity");
     let temperatureWind = document.querySelector("#wind-speed");
+    let iconElement = document.querySelector("#icon");
 
     cityElement.innerHTML = response.data.city;
-    
     temperatureElement.innerHTML = temperature;
     descriptionElement.innerHTML = response.data.condition.description;
     temperatureHumidity.innerHTML = `${response.data.temperature.humidity}%`;
     temperatureWind.innerHTML = `${response.data.wind.speed}km/h`;
-    console.log(response.data);
+    iconElement.innerHTML = `<img src= "${response.data.condition.icon_url}" class
+    ="current-temperature-icon"/>`;
   }
   
-  function search(event) {
-    event.preventDefault();
-    let searchInputElement = document.querySelector("#search-input");
-    let city = searchInputElement.value;
+  function search(city) {
     
   
     let apiKey = "b2a5adcct04b33178913oc335f405433";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
     axios.get(apiUrl).then(displayTemperature);
+  }
+  function handleSearchSubmit (event) {
+    event.preventDefault(); 
+    let searchInputElement = document.querySelector("#search-input");
+    search (searchInputElement.value);
+    
   }
   
   function formatDate(date) {
@@ -55,7 +59,7 @@ let descriptionElement = document.querySelector("#description");
   }
   
   let searchForm = document.querySelector("#search-form");
-  searchForm.addEventListener("submit", search);
+  searchForm.addEventListener("submit", handleSearchSubmit);
   search("Abuja")
   
   let currentDateELement = document.querySelector("#time");
