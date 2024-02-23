@@ -56,7 +56,7 @@ let descriptionElement = document.querySelector("#description");
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", search);
-  
+  search("Abuja")
   
   let currentDateELement = document.querySelector("#time");
   let currentDate = new Date();
