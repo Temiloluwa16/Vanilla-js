@@ -1,6 +1,7 @@
 body {
     background: #F6F3FB;
     font-family: "Roboto", sans-serif;
+    
   }
   
   a {
@@ -37,13 +38,10 @@ body {
  
       
       .weather-app {
-        background-image: url();
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+      
         max-width: 600px;
         margin: 60px auto;
-        padding: 30px;
+        padding: 60px;
         border-radius: 10px;
         box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
       }
@@ -52,6 +50,7 @@ body {
       
       main {
         padding: 30px 0;
+        
       }
       
       .current-temperature {
@@ -131,7 +130,7 @@ body {
         text-align: center;
         padding-top: 15px;
       
-        color: rgba(39, 33, 66, 0.4);
+        color: rgb(250, 114, 227);
       };
   
   
