@@ -6,7 +6,7 @@ body {
   
   a {
       background: #ffbefa;
-      color: ;
+      
         text-decoration: none;
         font-family: "Roboto", sans-serif;
       }
@@ -67,10 +67,10 @@ body {
         font-size: 38px;
         font-weight: 900;
         margin: 0;
+        line-height: 48px;
       }
       .current-details {
         color: rgb(89, 75, 153);
-        
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -81,21 +81,23 @@ body {
       }
       
       .current-temperature-icon {
-        position: relative;
-        top: -8px;
-        font-size: 40px;
-        margin-right: 10px;
+        width: 88px;
+        height: 88px;
+        
+        margin-right: -8px;
+        
       }
       
       .current-temperature-value {
         font-size: 80px;
         font-weight: bold;
+        line-height: 95px;
       }
       
       .current-temperature-unit {
         font-size: 28px;
         position: relative;
-        top: -38px;
+        margin-top: 6px;
       }
       
       .weather-forecast {
