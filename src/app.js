@@ -19,7 +19,7 @@ function displayTemperature(response) {
   function search(city) {
     
   
-    let apiKey = "b2a5adcct04b33178913oc335f405433";
+    let apiKey = "36bb04605e1o2a2f7ce6c8t6fa5fe0ba";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
     axios.get(apiUrl).then(displayTemperature);

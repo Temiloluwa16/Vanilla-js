@@ -1,11 +1,12 @@
 body {
-    background: #F6F3FB;
+    background: #b09dcf;
     font-family: "Roboto", sans-serif;
     
   }
   
   a {
-       color: #F65282;
+      background: #ffbefa;
+      color: ;
         text-decoration: none;
         font-family: "Roboto", sans-serif;
       }
@@ -68,7 +69,8 @@ body {
         margin: 0;
       }
       .current-details {
-        color: rgba(39, 33, 66, 0.4);
+        color: rgb(89, 75, 153);
+        
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -105,7 +107,7 @@ body {
 
       .weather-forecast-date {
         text-align: center;
-        color: rgba(39, 33, 66, 0.4);
+        color: rgb(89, 75, 153);
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 10px;
@@ -130,7 +132,7 @@ body {
         text-align: center;
         padding-top: 15px;
       
-        color: rgb(250, 114, 227);
+        color: rgb(92, 55, 86);
       };
   
   
