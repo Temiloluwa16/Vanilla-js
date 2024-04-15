@@ -1,3 +1,16 @@
+/*Media query for tablets*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .weather-app {
+    flex-direction: row;
+  }
+}
+/*Media query for desktops*/
+@media only screen and (min-width: 1025px) {
+  .weather-app {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 body {
     background: #b09dcf;
     font-family: "Roboto", sans-serif;
@@ -39,16 +52,16 @@ body {
  
       
       .weather-app {
-      
+       display: flex;
+       flex-direction: column;
         max-width: 600px;
         margin: 60px auto;
         padding: 60px;
         border-radius: 10px;
         box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+        background: #D9CBEE;
       }
-      
-     
-      
+    
       main {
         padding: 30px 0;
         
